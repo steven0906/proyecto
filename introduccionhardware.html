@@ -1,0 +1,40 @@
+{% extends './base.html' %}
+
+{% block title%} introduccionhardware {% endblock %}
+
+{% block body %}
+<br>
+
+<br>
+<div class="card w-75 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Ensamble de PC</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="{{ url_for('ensamble') }}" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+  
+  <div class="card w-75 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Mantenimineto Preventivo</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="{{ url_for('mantenimiento') }}" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+
+  <div class="card w-75 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Linea de Tiempo</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="{{ url_for('linea') }}" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+
+  <div class="card w-75 mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Ficha Tecnica</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="{{ url_for('ficha') }}" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+{% endblock %}

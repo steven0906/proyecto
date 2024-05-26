@@ -1,0 +1,49 @@
+{% extends './base.html' %}
+
+{% block title%} Aplicativo {% endblock %}
+
+{% block body %}
+
+<br>
+
+<br>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <a href="{{ url_for('sistemasoperativos') }}"><img src="https://www.areatecnologia.com/informatica/imagenes/so.jpg" height="300px" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5  class="card-title">Sistemas operativos</h5>
+          <p class="card-text">Aqui se mostrara los traabjos de sistemas operativos </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href="{{ url_for('logica') }}"><img src="https://framerusercontent.com/images/mxzyKWUv3p6qd9hGxh2XgAwNiCk.jpg" height="300px" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">Logica de Programacion</h5>
+          <p class="card-text">Aqui se mostrara los trabjos de Logica de Programacion</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href="{{ url_for('introduccionhardware') }}"><img src="https://concepto.de/wp-content/uploads/2018/08/placa-madre4-e1534448775216-800x400.jpg" height="300px" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">Introduccion a Hardware</h5>
+          <p class="card-text">Aqui se mostrara los trabjos de Introduccion a Hardware</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href="{{ url_for('ingles') }}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhduRleejGFAIBGUnMD3oft_cyJlqT5zeBdcKk1v_Qxg&s" height="300px" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">English</h5>
+          <p class="card-text">Here the works of the English subject will be shown</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
